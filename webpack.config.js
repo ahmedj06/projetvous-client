@@ -2,15 +2,16 @@
 //var extractCSS = new ExtractTextPlugin('bundle.css');
 var webpack = require('webpack');
 var path = require('path');
-var DIST_DIR = path.resolve(__dirname, 'dist');
+var DIST_DIR = path.resolve(__dirname, 'public/dist');
 var SRC_DIR = path.resolve(__dirname, 'src');
+var PUBLIC_DIR = path.resolve(__dirname, 'public/');
 
 var config = {
-    entry: SRC_DIR + '/app/index.js',
+    entry: SRC_DIR + '/index.js',
     output: {
-        path: DIST_DIR + '/app',
+        path: DIST_DIR,
         filename: "bundle.js",
-        publicPath: "/app/"
+        publicPath: "/public/"
     },
     resolve: {
         extensions: ['.js', '.jsx', '.less', '.css', '.json']

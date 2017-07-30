@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "",
+    "start": "webpack -d && webpack-dev-server --content-base public/",
     "build": "webpack -d"
   },
   "author": "",

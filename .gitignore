@@ -33,6 +33,7 @@ bower_components
 build/Release
 
 # dist compiled webpack
+public/dist/
 dist/
 
 # Dependency directories
